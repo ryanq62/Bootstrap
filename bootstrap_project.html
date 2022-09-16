@@ -3,14 +3,16 @@
 <head>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Italy</title>
   <link rel="icon" type="image/x-icon" href="italy_flag.png">
   <meta charset="UTF-8">
   <style>
   body {background-color:powderblue;}
   #myHeader   {
-    border: 2px solid Black;
+    border: 4px solid Green;
     font-family: Verdana;
+    color:white
   }
   table, th, td {
     border:1px solid black;
@@ -18,139 +20,148 @@
   .city {
     color:blue
   }
+  .center {
+  text-align: center;
+  }
   </style>
 </head>
 <body>
 
   <!-- section for an introduction to what italy is-->
-  <img src="italy_flag.png" width=30% height=40% alt="Italian Flag">
-  <h1 id="myHeader">Italy&trade;&#129366;</h1>
-  <h2 style="color:green;">a medium sized European country with a long Mediterranean coastline, has left a powerful mark on Western culture and cuisine</h2>
-  <hr>
+  <div class="container p-5 my-5 bg-dark">
+    <img style="padding-bottom:10px" src="italy_flag.png" width=16% height=20% alt="Italian Flag">
+    <h1 id="myHeader">Italy&trade;&#129366;</h1>
+    <h2 style="color:red;">a medium sized European country with a long Mediterranean coastline, has left a powerful mark on Western culture and cuisine</h2>
+    </hr>
+  </div>
 
-  <p><a href="#cities">Jump to Cities</a></p>
-  <p><a href="#facts">Jump to Fun Facts</a></p>
-  <p><a href="#food">Jump to Food</a></p>
+  <div class="center row">
+    <div class="col"><p><a href="#cities">Jump to Cities</a></p></div>
+    <div class="col"><p><a href="#facts">Jump to Fun Facts</a></p></div>
+    <div class="col"><p><a href="#food">Jump to Food</a></p></div>
+  </div>
 
-  <img id="cities" src="italy_city.jpg" width=30% height=40% alt="Italian City">
-  <h2>Cities</h2>
-  <p style="color:red;">Its capital, <span class="city">Rome</span>, is home to the Vatican as well as landmark art and ancient ruins. Other major cities include <span class="city">Florence</span>, with Renaissance masterpieces such as Michelangelo’s "David" and Brunelleschi's Duomo; <span class="city">Venice</span>, the city of canals; and <span class="city">Milan</span>, Italy’s fashion capital.</p>
-  <a href="https://en.wikipedia.org/wiki/David_(Michelangelo)">Learn about David, Michelangelo's most famous sclupture</a>
-  <h3>City Comparison</h3>
-  <table style="width:100%">
-    <tr>
-      <th>City</th>
-      <th>Population</th>
-      <th>Size</th>
-      <th>Tourists (2019)</th>
-      <th>Most Popular Place</th>
-    </tr>
-    <tr>
-      <td>Rome</td>
-      <td>2,873,000</td>
-      <td>1,290 km²</td>
-      <td>10,317,000</td>
-      <td>Pantheon</td>
-    </tr>
-    <tr>
-      <td>Milan</td>
-      <td>1,352,000</td>
-      <td>181.8 km²</td>
-      <td>6,604,400</td>
-      <td>Duomo di Milano</td>
-    </tr>
-    <tr>
-      <td>Venice</td>
-      <td>261,905</td>
-      <td>414.6 km²</td>
-      <td>5,590,500</td>
-      <td>St. Mark's Basilica</td>
-    </tr>
-    <tr>
-      <td>Florence</td>
-      <td>382,258</td>
-      <td>102.4 km²</td>
-      <td>5,125,700</td>
-      <td>Uffizi Gallery</td>
-    </tr>
-  </table>
-  <br> <br> <hr>
+    <img id="cities" src="italy_city.jpg" width=30% height=40% alt="Italian City">
+    <h2>Cities</h2>
+    <p style="color:red;">Its capital, <span class="city">Rome</span>, is home to the Vatican as well as landmark art and ancient ruins. Other major cities include <span class="city">Florence</span>, with Renaissance masterpieces such as Michelangelo’s "David" and Brunelleschi's Duomo; <span class="city">Venice</span>, the city of canals; and <span class="city">Milan</span>, Italy’s fashion capital.</p>
+    <a href="https://en.wikipedia.org/wiki/David_(Michelangelo)">Learn about David, Michelangelo's most famous sclupture</a>
+    <br>
 
-  <h2 id="facts">Fun Facts</h2>
-  <ul>
-    <li>Italy is one of Western Europe's youngest countries</li>
-    <li>Rome is over 2,000 years old</li>
-    <li>The country was under a dictatorship for 20 years</li>
-    <li>Italy's last king ruled for just 36 days</li>
-    <li>Tourists throw €1,000,000 into the Trevi Fountain each year</li>
-    <li>13 of Shakespeare's 38 plays are set in Italy</li>
-    <li>Pinocchio was first published in an Italian newspaper</li>
-    <li>Italy has more World Heritage sites than any other country</li>
-    <li>The Sistine Chapel welcomes over 20,000 visitors every day</li>
-    <li>Italy is home to Europe’s only three active volcanoes</li>
-    <li>The Vatican City is the world's smallest country</li>
-    <li>Italy is the fifth most visited country in the world</li>
-    <li>Italy has over 1500 lakes</li>
-    <li>Italy's highest mountain is Mont Blanc</li>
-    <li>Batteries were invented in Italy</li>
-    <li>The first ever bank started in Italy</li>
-    <li>Italians invented eyeglasses</li>
-    <li>Italians ate pasta as far back as 4BC</li>
-    <li>Italy is the world's largest wine producer</li>
-    <li>Italians eat salad for dessert</li>
-  </ul>
-  <br> <hr> <br>
+    <h3>City Comparison</h3>
+    <table style="width:100%">
+      <tr>
+        <th>City</th>
+        <th>Population</th>
+        <th>Size</th>
+        <th>Tourists (2019)</th>
+        <th>Most Popular Place</th>
+      </tr>
+      <tr>
+        <td>Rome</td>
+        <td>2,873,000</td>
+        <td>1,290 km²</td>
+        <td>10,317,000</td>
+        <td>Pantheon</td>
+      </tr>
+      <tr>
+        <td>Milan</td>
+        <td>1,352,000</td>
+        <td>181.8 km²</td>
+        <td>6,604,400</td>
+        <td>Duomo di Milano</td>
+      </tr>
+      <tr>
+        <td>Venice</td>
+        <td>261,905</td>
+        <td>414.6 km²</td>
+        <td>5,590,500</td>
+        <td>St. Mark's Basilica</td>
+      </tr>
+      <tr>
+        <td>Florence</td>
+        <td>382,258</td>
+        <td>102.4 km²</td>
+        <td>5,125,700</td>
+        <td>Uffizi Gallery</td>
+      </tr>
+    </table>
+    <br> <br> <hr>
 
-  <!-- section on italian food -->
-  <img id="food" src="italy_food.jpg" width=30% height=40% alt="Italian Food"> <br> <br>
-  <em style="font-size:300%;">Italian Food</em>
-  <p>Here is a quote from wikipedia:</p>
-  <blockquote cite="https://en.wikipedia.org/wiki/Italian_cuisine">
-    Italian cuisine (Italian: Cucina italiana, pronounced [ku&apos;tʃiːna ita&apos;ljaːna])
-    is a Mediterranean cuisine consisting of the ingredients, recipes and cooking
-    techniques developed across the Italian Peninsula since antiquity, and later
-    spread around the world together with waves of Italian diaspora.
-  </blockquote>
-  <h3> Famous Italian Dishes (click the images to learn more about them!)</h3>
-  <a href="https://www.history.com/news/a-slice-of-history-pizza-through-the-ages" title="Pizza">
-    <img src="pizza.jpg" alt="Pizza" style="width:15%">
-  </a>
-  <a href="https://mitaliakitchen.com/the-story-of-lasagna" title = "Lasagna">
-    <img src="lasagna.jpg" alt="Lasagna" style="width:10%">
-  </a>
-  <a href="https://www.delallo.com/blog/history-of-pasta-wheat-water-patience/" title = "Pasta">
-    <img src="pasta.jpg" alt="Pasta" style="width:18%">
-  </a>
-  <a href="https://thesussexkitchen.com/blogs/blog/a-brief-history-of-focaccia" title = Foccacia>
-    <img src="foccacia.jpg" alt="Foccacia" style="width:15.2%">
-  </a>
-  <a href="https://blog.alcas.us/the-history-of-gelato" title = "Gelato">
-    <img src="gelato.jpg" alt="Gelato " style="width:13.5%">
-  </a>
+    <h2 id="facts">Fun Facts</h2>
+    <ul>
+      <li>Italy is one of Western Europe's youngest countries</li>
+      <li>Rome is over 2,000 years old</li>
+      <li>The country was under a dictatorship for 20 years</li>
+      <li>Italy's last king ruled for just 36 days</li>
+      <li>Tourists throw €1,000,000 into the Trevi Fountain each year</li>
+      <li>13 of Shakespeare's 38 plays are set in Italy</li>
+      <li>Pinocchio was first published in an Italian newspaper</li>
+      <li>Italy has more World Heritage sites than any other country</li>
+      <li>The Sistine Chapel welcomes over 20,000 visitors every day</li>
+      <li>Italy is home to Europe’s only three active volcanoes</li>
+      <li>The Vatican City is the world's smallest country</li>
+      <li>Italy is the fifth most visited country in the world</li>
+      <li>Italy has over 1500 lakes</li>
+      <li>Italy's highest mountain is Mont Blanc</li>
+      <li>Batteries were invented in Italy</li>
+      <li>The first ever bank started in Italy</li>
+      <li>Italians invented eyeglasses</li>
+      <li>Italians ate pasta as far back as 4BC</li>
+      <li>Italy is the world's largest wine producer</li>
+      <li>Italians eat salad for dessert</li>
+    </ul>
+    <br> <hr> <br>
 
-  <h3>How to Cook Dried Pasta, Step-by-Step</h3>
-  <dl>
-    <dt>Step 1: Boil Water</dt>
-    <dd>Start with a very large pot of water, about 6 quarts per pound of pasta. Bring it to a rapid boil.</dd>
-    <dt>Step 2: Add Salt</dt>
-    <dd>Put in a lot of salt, about 3 tablespoons. If you taste the water, it should taste like the sea.</dd>
-    <dt>Step 3: Add the Pasta</dt>
-    <dd>Drop in the pasta while the water is at a boil and give it a gentle stir.</dd>
-    <dt>Step 4: Stir</dt>
-    <dd>Stir it occasionally while it cooks. Use the cooking time on the pasta package as a guide.</dd>
-    <dt>Step 5: Taste the Pasta</dt>
-    <dd>But watch out — it's hot! Sample the pasta at about 2 minutes shy of the indicated time. It should be al dente. You'll finish cooking it in the sauce.</dd>
-    <dt>Step 6: Drain</dt>
-    <dd>Drain the pasta. Just be sure to save about 1 cup of the pasta water. If you have a pot with a colander insert, use it to drain the pasta. If not, drain the pasta in a colander set in the sink.</dd>
-    <dt>Step 7: Removing Ravioli</dt>
-    <dd>If you're cooking ravioli, use a slotted skimmer and gently lift the ravioli a few at a time.</dd>
-    <dt>Step 8: Stir In the Sauce</dt>
-    <dd>Add the pasta to your sauce and finish cooking it in the sauce. Give it a stir to coat.</dd>
-    <dt>Step 9: Add Pasta Water</dt>
-    <dd>Ladle a few tablespoons of the pasta water at a time until you have the right consistency to your sauce. Remember, the pasta will absorb the liquid. Tip: Pasta water helps to thicken the sauce.</dd>
-    <dt>Step 10: Buon Appetito!</dt>
-    <dd>Simmer over medium-low heat — it'll help the pasta soak up the sauce. Follow your recipe's instructions for finishing the dish. And that's all there is to it. Perfecto!</dd>
-  </dl>
+    <!-- section on italian food -->
+    <img id="food" src="italy_food.jpg" width=30% height=40% alt="Italian Food"> <br> <br>
+    <em style="font-size:300%;">Italian Food</em>
+    <p>Here is a quote from wikipedia:</p>
+    <blockquote cite="https://en.wikipedia.org/wiki/Italian_cuisine">
+      Italian cuisine (Italian: Cucina italiana, pronounced [ku&apos;tʃiːna ita&apos;ljaːna])
+      is a Mediterranean cuisine consisting of the ingredients, recipes and cooking
+      techniques developed across the Italian Peninsula since antiquity, and later
+      spread around the world together with waves of Italian diaspora.
+    </blockquote>
+    <h3> Famous Italian Dishes (click the images to learn more about them!)</h3>
+    <a href="https://www.history.com/news/a-slice-of-history-pizza-through-the-ages" title="Pizza">
+      <img src="pizza.jpg" alt="Pizza" style="width:15%">
+    </a>
+    <a href="https://mitaliakitchen.com/the-story-of-lasagna" title = "Lasagna">
+      <img src="lasagna.jpg" alt="Lasagna" style="width:10%">
+    </a>
+    <a href="https://www.delallo.com/blog/history-of-pasta-wheat-water-patience/" title = "Pasta">
+      <img src="pasta.jpg" alt="Pasta" style="width:18%">
+    </a>
+    <a href="https://thesussexkitchen.com/blogs/blog/a-brief-history-of-focaccia" title = Foccacia>
+      <img src="foccacia.jpg" alt="Foccacia" style="width:15.2%">
+    </a>
+    <a href="https://blog.alcas.us/the-history-of-gelato" title = "Gelato">
+      <img src="gelato.jpg" alt="Gelato " style="width:13.5%">
+    </a>
+
+    <h3>How to Cook Dried Pasta, Step-by-Step</h3>
+    <dl>
+      <dt>Step 1: Boil Water</dt>
+      <dd>Start with a very large pot of water, about 6 quarts per pound of pasta. Bring it to a rapid boil.</dd>
+      <dt>Step 2: Add Salt</dt>
+      <dd>Put in a lot of salt, about 3 tablespoons. If you taste the water, it should taste like the sea.</dd>
+      <dt>Step 3: Add the Pasta</dt>
+      <dd>Drop in the pasta while the water is at a boil and give it a gentle stir.</dd>
+      <dt>Step 4: Stir</dt>
+      <dd>Stir it occasionally while it cooks. Use the cooking time on the pasta package as a guide.</dd>
+      <dt>Step 5: Taste the Pasta</dt>
+      <dd>But watch out — it's hot! Sample the pasta at about 2 minutes shy of the indicated time. It should be al dente. You'll finish cooking it in the sauce.</dd>
+      <dt>Step 6: Drain</dt>
+      <dd>Drain the pasta. Just be sure to save about 1 cup of the pasta water. If you have a pot with a colander insert, use it to drain the pasta. If not, drain the pasta in a colander set in the sink.</dd>
+      <dt>Step 7: Removing Ravioli</dt>
+      <dd>If you're cooking ravioli, use a slotted skimmer and gently lift the ravioli a few at a time.</dd>
+      <dt>Step 8: Stir In the Sauce</dt>
+      <dd>Add the pasta to your sauce and finish cooking it in the sauce. Give it a stir to coat.</dd>
+      <dt>Step 9: Add Pasta Water</dt>
+      <dd>Ladle a few tablespoons of the pasta water at a time until you have the right consistency to your sauce. Remember, the pasta will absorb the liquid. Tip: Pasta water helps to thicken the sauce.</dd>
+      <dt>Step 10: Buon Appetito!</dt>
+      <dd>Simmer over medium-low heat — it'll help the pasta soak up the sauce. Follow your recipe's instructions for finishing the dish. And that's all there is to it. Perfecto!</dd>
+    </dl>
 
 </body>
 </html>
