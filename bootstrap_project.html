@@ -21,19 +21,49 @@
     color:blue
   }
   .center {
-  text-align: center;
+    text-align: center;
+  }
+  .container .spinner {
+    border: 6px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 6px solid green;
+    border-bottom: 6px solid red;
+    border-right: 6px solid white;
+    border-left: 6px solid white;
+    width: 45px;
+    height: 45px;
+    -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+  }
+
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+      }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
   </style>
 </head>
 <body>
 
 <div class="container">
-  <!-- section for an introduction to what italy is-->
   <div class="container p-5 my-5 bg-dark">
     <img class=mb-5 src="italy_flag.png" width=16% height=20% alt="Italian Flag">
     <h1 id="myHeader">Italy&trade;&#129366;</h1>
     <h2 style="color:red;">a medium sized European country with a long Mediterranean coastline, has left a powerful mark on Western culture and cuisine</h2>
   </div>
+
+  <div class="container spinner"></div>
 
   <div class="container mx-auto mt-5">
     <div class="alert alert-success alert-dismissible fade show">
